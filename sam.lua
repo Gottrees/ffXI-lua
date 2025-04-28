@@ -94,7 +94,7 @@ function init_gear_sets()
     -- Precast Sets
     -- Precast sets to enhance JAs
     sets.precast.JA.Meditate = {
-	head="Wakido Kabuto +2",
+	head="Wakido Kabuto +3",
 	back="Smertrios's Mantle",
     hands={ name="Sakonji Kote +3", augments={'Enhances "Blade Bash" effect',}},
     }
@@ -217,7 +217,22 @@ function init_gear_sets()
     
     sets.precast.WS['Tachi: Yukikaze'] = set_combine(sets.precast.WS, {})
     
-    sets.precast.WS['Tachi: Jinpu'] = set_combine(sets.precast.WS, {neck="Fotia Gorget",})
+    sets.precast.WS['Tachi: Jinpu'] = {
+        ammo="Knobkierrie",
+        head={ name="Nyame Helm", augments={'Path: B',}},
+        body={ name="Nyame Mail", augments={'Path: B',}},
+        hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+        legs={ name="Nyame Flanchard", augments={'Path: B',}},
+        feet={ name="Nyame Sollerets", augments={'Path: B',}},
+        neck={ name="Sam. Nodowa +1", augments={'Path: A',}},
+        waist="Brezze Belt",
+        left_ear="Friomisi Earring",
+        right_ear={ name="Kasuga Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+12','Mag. Acc.+12','Weapon skill damage +2%',}},
+        left_ring="Epaminondas's Ring",
+        right_ring="Karieyh Ring",
+        back={ name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
+    }
+        
     
     sets.midcast['Blue Magic'] = set_combine(sets.precast.WS['Tachi: Ageha'], {
     })
@@ -243,7 +258,21 @@ function init_gear_sets()
         back={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}}, 
   }
     
-    sets.idle.Town = {}
+    sets.idle.Town = {
+        ammo="Staunch Tathlum +1",
+        head="Wakido Kabuto +3",
+        body="Wakido Domaru +2",
+        hands="Wakido Kote +2",
+        legs="Wakido Haidate +3",
+        feet="Danzo Sune-Ate",
+        neck={ name="Sam. Nodowa +1", augments={'Path: A',}},
+        waist="Ioskeha Belt +1",
+        left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+        right_ear={ name="Kasuga Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+12','Mag. Acc.+12','Weapon skill damage +2%',}},
+        left_ring="Warp Ring",
+        right_ring="Dim. Ring (Dem)",
+        back={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},
+    }
     -- sets.idle.Town.Adoulin = set_combine(sets.idle.Town, {
     --     body="Councilor's Garb"
     -- })
@@ -299,12 +328,13 @@ function init_gear_sets()
         ammo={ name="Coiste Bodhar", augments={'Path: A',}},
         head="Kasuga Kabuto +2",
         body="Kasuga Domaru +2",
-        hands="Ken. Tekko +1",
-        legs="Kasuga Haidate +2",
-        feet="Wakido Sune. +2",
+        hands={ name="Tatena. Gote +1", augments={'Path: A',}},
+        legs={ name="Tatena. Haidate +1", augments={'Path: A',}},
+        --legs="Kasuga Haidate +2",
+        feet={ name="Tatena. Sune. +1", augments={'Path: A',}},
         neck={ name="Sam. Nodowa +1", augments={'Path: A',}},
-        waist="Ioskeha Belt +1",
-        left_ear="Schere Earring",
+        waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+        left_ear="Cessance Earring",
         right_ear={ name="Kasuga Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+12','Mag. Acc.+12','Weapon skill damage +2%',}},
         left_ring="Niqmaddu Ring",
         right_ring="Chirich Ring +1",
@@ -313,7 +343,21 @@ function init_gear_sets()
     
     sets.engaged.Mid = set_combine(sets.engaged, {})
 
-    sets.engaged.Acc = set_combine(sets.engaged.Mid, {})
+    sets.engaged.Acc = set_combine(sets.engaged.Mid, {
+        ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+        head="Wakido Kabuto +3",
+        body="Wakido Domaru +2",
+        hands="Wakido Kote +2",
+        legs="Wakido Haidate +3",
+        feet="Wakido Sune. +2",
+        neck={ name="Sam. Nodowa +1", augments={'Path: A',}},
+        waist="Ioskeha Belt +1",
+        left_ear="Crep. Earring",
+        right_ear={ name="Kasuga Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+12','Mag. Acc.+12','Weapon skill damage +2%',}},
+        left_ring="Chirich Ring +1",
+        right_ring="Regal Ring",
+        back={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},
+    })
 
     sets.engaged.PDT = set_combine(sets.engaged, {
 		ammo="Ginsen",
