@@ -197,7 +197,7 @@ function init_gear_sets()
   sets.precast.FC = {
     head="C. Palug Crown",
     body="Inyanga Jubbah +2",
-    hands="Fili Manchettes +2",
+    hands="Fili Manchettes +3",
     legs="Volte Brais",
     feet="Fili Cothurnes +2",
     neck={ name="Loricate Torque +1", augments={'Path: A',}},
@@ -283,11 +283,11 @@ function init_gear_sets()
   sets.midcast.Ballad = {legs="Fili Rhingrave +2"}
   sets.midcast.Carol = {hands="Mousai Gages"}
   sets.midcast.Etude = {head="Mousai Turban"}
-  sets.midcast.HonorMarch = {range="Marsyas", hands="Fili Manchettes +2"}
+  sets.midcast.HonorMarch = {range="Marsyas", hands="Fili Manchettes +3"}
   sets.midcast.Lullaby = {body="Fili Hongreline +3", hands="Brioso Cuffs +3",range="Blurred Harp +1",}
   sets.midcast.Madrigal = {head="Fili Calot +2"}
   --sets.midcast.Mambo = {feet="Mousai Crackows"}
-  sets.midcast.March = {hands="Fili Manchettes +2"}
+  sets.midcast.March = {hands="Fili Manchettes +3"}
   sets.midcast.Minne = {legs="Mousai Seraweels"}
   sets.midcast.Minuet = {body="Fili Hongreline +3"}
   sets.midcast.Paeon = {head="Brioso Roundlet +3"}
@@ -302,9 +302,9 @@ function init_gear_sets()
   sets.midcast.SongEnhancing = {
     head="Fili Calot +2",
     body="Fili Hongreline +3",
-    hands="Fili Manchettes +2",
+    hands="Fili Manchettes +3",
     legs="Inyanga Shalwar +2",
-    feet="Brioso Slippers +2",
+    feet="Brioso Slippers +3",
     neck="Mnbw. Whistle +1",
     waist="Embla Sash",
     left_ear="Cessance Earring",
@@ -320,7 +320,7 @@ function init_gear_sets()
     body="Brioso Justau. +3",
     hands="Brioso Cuffs +3",
     legs="Brioso Cannions +3",
-    feet="Brioso Slippers +2",
+    feet="Brioso Slippers +3",
     neck="Mnbw. Whistle +1",
     waist="Eschan Stone",
     left_ear="Arete del Luna",
@@ -392,7 +392,7 @@ function init_gear_sets()
   sets.idle = {
     head="Fili Calot +2",
     body="Inyanga Jubbah +2",
-    hands="Fili Manchettes +2",
+    hands="Fili Manchettes +3",
     legs="Inyanga Shalwar +2",
     feet="Fili Cothurnes +2",
     neck={ name="Loricate Torque +1", augments={'Path: A',}},
@@ -401,13 +401,13 @@ function init_gear_sets()
     right_ear={ name="Fili Earring", augments={'System: 1 ID: 1676 Val: 0','Accuracy+6','Mag. Acc.+6',}},
     left_ring="Defending Ring",
     right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
-    back={ name="Intarabus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10',}},
+    back={ name="Intarabus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}},
   }
 
   sets.idle.DT = {
     head="Fili Calot +2",
     body="Nyame Mail",
-    hands="Fili Manchettes +2",
+    hands="Fili Manchettes +3",
     legs="Nyame Flanchard",
     feet="Nyame Sollerets",
     neck={ name="Loricate Torque +1", augments={'Path: A',}},
@@ -425,7 +425,7 @@ function init_gear_sets()
     range="Daurdabla",
     head="Fili Calot +2",
     body="Inyanga Jubbah +2",
-    hands="Fili Manchettes +2",
+    hands="Fili Manchettes +3",
     legs="Inyanga Shalwar +2",
     feet="Fili Cothurnes +2",
     neck={ name="Loricate Torque +1", augments={'Path: A',}},
@@ -466,7 +466,7 @@ function init_gear_sets()
     body="Ashera Harness",
     hands="Aya. Manopolas +2",
     legs="Aya. Cosciales +2",
-    feet="Brioso Slippers +2",
+    feet="Brioso Slippers +3",
     neck="Bard's Charm +1",
     waist="Windbuffet Belt +1",
     left_ear="Suppanomimi",
