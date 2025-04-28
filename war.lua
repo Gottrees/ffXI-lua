@@ -27,11 +27,24 @@ function get_sets()
     head={ name="Agoge Mask +3", augments={'Enhances "Savagery" effect',}},
   }
   sets.JA['Blood Rage'] = {
-    body="Boii Lorica +2"
+    body="Boii Lorica +3"
   }
   sets.JA['Mighty Strikes'] = {}
   sets.JA.Tomahawk = {ammo="Thr. Tomahawk",feet="Agoge Calligae"}
-  sets.JA.Provoke = sets.Enmity
+  sets.JA.Provoke ={
+    head={ name="Souv. Schaller +1", augments={'Accuracy+13','Attack+12','Enmity+5',}},
+    body={ name="Souv. Cuirass +1", augments={'Accuracy+13','Attack+12','Enmity+5',}},
+    hands={ name="Souv. Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
+    legs={ name="Souv. Diechlings +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
+    feet={ name="Souveran Schuhs +1", augments={'Accuracy+13','Attack+12','Enmity+5',}},
+    neck={ name="War. Beads +2", augments={'Path: A',}},
+    waist="Ioskeha Belt +1",
+    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+    right_ear={ name="Boii Earring", augments={'System: 1 ID: 1676 Val: 0','Accuracy+6','Mag. Acc.+6',}},
+    left_ring="Vengeful Ring",
+    right_ring="Moonlight Ring",
+    back="Moonlight Cape",
+  }
   sets.JA.Retaliation = {
     feet="Boii Calligae +3",
   }
@@ -41,18 +54,18 @@ function get_sets()
 
   sets.TP = {}
   sets.TP.Normal = {
-    ammo="Yetshila +1",
+    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     head="Boii Mask +3",
-    body="Hjarrandi Breast.",
-    hands="Flam. Manopolas +2",
+    body="Boii Lorica +3",
+    hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
     legs="Pumm. Cuisses +3",
-    feet="Boii Calligae +3",
-    neck={ name="War. Beads +1", augments={'Path: A',}},
-    waist="Ioskeha Belt +1",
-    left_ear="Cessance Earring",
+    feet="Pumm. Calligae +3",
+    neck={ name="War. Beads +2", augments={'Path: A',}},
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+    left_ear="Schere Earring",
     right_ear={ name="Boii Earring", augments={'System: 1 ID: 1676 Val: 0','Accuracy+6','Mag. Acc.+6',}},
     left_ring="Niqmaddu Ring",
-    right_ring="Chirich Ring +1",
+    right_ring="Moonlight Ring",
     back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},
   }
 
@@ -75,7 +88,20 @@ function get_sets()
   sets.TP.Acc = {}
   sets.TP.DT = sets.DT
   
-  sets.Enmity = {}
+  sets.Enmity ={
+    head={ name="Souv. Schaller +1", augments={'Accuracy+13','Attack+12','Enmity+5',}},
+    body={ name="Souv. Cuirass +1", augments={'Accuracy+13','Attack+12','Enmity+5',}},
+    hands={ name="Souv. Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
+    legs={ name="Souv. Diechlings +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
+    feet={ name="Souveran Schuhs +1", augments={'Accuracy+13','Attack+12','Enmity+5',}},
+    neck={ name="War. Beads +2", augments={'Path: A',}},
+    waist="Ioskeha Belt +1",
+    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+    right_ear={ name="Boii Earring", augments={'System: 1 ID: 1676 Val: 0','Accuracy+6','Mag. Acc.+6',}},
+    left_ring="Vengeful Ring",
+    right_ring="Moonlight Ring",
+    back="Moonlight Cape",
+  }
   sets.FC = {}
   
   
@@ -83,11 +109,11 @@ function get_sets()
   sets.Idle = {
     ammo="Crepuscular Pebble",
     head="Boii Mask +3",
-    body="Boii Lorica +2",
+    body="Boii Lorica +3",
     hands="Boii Mufflers +3",
-    legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
+    legs="Boii Cuisses +3",
     feet="Hermes' Sandals",
-    neck={ name="War. Beads +1", augments={'Path: A',}},
+    neck={ name="War. Beads +2", augments={'Path: A',}},
     waist="Ioskeha Belt +1",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
     right_ear={ name="Boii Earring", augments={'System: 1 ID: 1676 Val: 0','Accuracy+6','Mag. Acc.+6',}},
@@ -99,11 +125,11 @@ function get_sets()
   sets.DT = {
     ammo="Crepuscular Pebble",
     head="Boii Mask +3",
-    body="Boii Lorica +2",
+    body="Boii Lorica +3",
     hands="Boii Mufflers +3",
     legs="Sakpata's Cuisses",
     feet="Boii Calligae +3",
-    neck={ name="War. Beads +1", augments={'Path: A',}},
+    neck={ name="War. Beads +2", augments={'Path: A',}},
     waist="Ioskeha Belt +1",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
     right_ear={ name="Boii Earring", augments={'System: 1 ID: 1676 Val: 0','Accuracy+6','Mag. Acc.+6',}},
@@ -116,47 +142,47 @@ function get_sets()
   --Great Axe WS
   sets.WS['Upheaval'] = {
     ammo="Knobkierrie",
-    head={ name="Agoge Mask +3", augments={'Enhances "Savagery" effect',}},
-    body="Pumm. Lorica +3",
-    hands="Boii Mufflers +3",
-    legs={ name="Valorous Hose", augments={'Accuracy+20 Attack+20','Crit. hit damage +4%','Accuracy+15','Attack+13',}},
-    feet="Sulev. Leggings +2",
-    neck="Fotia Gorget",
-    waist="Fotia Belt",
+    head={ name="Nyame Helm", augments={'Path: B',}},
+    body={ name="Nyame Mail", augments={'Path: B',}},
+    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+    legs="Boii Cuisses +3",
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    neck={ name="War. Beads +2", augments={'Path: A',}},
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear="Thrud Earring",
     right_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
-    left_ring="Epaminondas's Ring",
-    right_ring="Karieyh Ring",
-    back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},
+    left_ring="Niqmaddu Ring",
+    right_ring="Regal Ring",
+    back={ name="Cichol's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+10','Weapon skill damage +10%',}},
   }
   sets.WS["Ukko's Fury"] = {
-    ammo="Knobkierrie",
-    head={ name="Agoge Mask +3", augments={'Enhances "Savagery" effect',}},
-    body="Pumm. Lorica +3",
-    hands="Boii Mufflers +3",
-    legs={ name="Valorous Hose", augments={'Accuracy+20 Attack+20','Crit. hit damage +4%','Accuracy+15','Attack+13',}},
-    feet={ name="Valorous Greaves", augments={'"Mag.Atk.Bns."+9','"Cure" potency +2%','Weapon skill damage +9%','Accuracy+12 Attack+12',}},
-    neck="Fotia Gorget",
-    waist="Fotia Belt",
-    left_ear="Thrud Earring",
-    right_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
-    left_ring="Epaminondas's Ring",
-    right_ring="Karieyh Ring",
-    back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},
+    ammo="Yetshila +1",
+    head="Boii Mask +3",
+    body="Hjarrandi Breast.",
+    hands="Flam. Manopolas +2",
+    legs="Boii Cuisses +3",
+    feet="Boii Calligae +3",
+    neck={ name="War. Beads +2", augments={'Path: A',}},
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+    left_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
+    right_ear={ name="Boii Earring", augments={'System: 1 ID: 1676 Val: 0','Accuracy+6','Mag. Acc.+6',}},
+    left_ring="Niqmaddu Ring",
+    right_ring="Regal Ring",
+    back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},
   }
   sets.WS["Fell Cleave"] = {
-    ammo="Knobkierrie",
+    ammo="Yetshila +1",
     head={ name="Agoge Mask +3", augments={'Enhances "Savagery" effect',}},
-    body="Pumm. Lorica +3",
-    hands="Boii Mufflers +3",
-    legs={ name="Valorous Hose", augments={'Accuracy+20 Attack+20','Crit. hit damage +4%','Accuracy+15','Attack+13',}},
-    feet={ name="Valorous Greaves", augments={'"Mag.Atk.Bns."+9','"Cure" potency +2%','Weapon skill damage +9%','Accuracy+12 Attack+12',}},
+    body={ name="Sakpata's Plate", augments={'Path: A',}},
+    hands="Flam. Manopolas +2",
+    legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
+    feet="Boii Calligae +3",
     neck="Fotia Gorget",
     waist="Fotia Belt",
-    left_ear="Thrud Earring",
-    right_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
-    left_ring="Epaminondas's Ring",
-    right_ring="Karieyh Ring",
+    left_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
+    right_ear="Thrud Earring",
+    left_ring="Niqmaddu Ring",
+    right_ring="Epaminondas's Ring",
     back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},
   }
 
@@ -244,16 +270,16 @@ function get_sets()
   sets.WS['Savage Blade'] = {
     ammo="Knobkierrie",
     head={ name="Agoge Mask +3", augments={'Enhances "Savagery" effect',}},
-    body="Pumm. Lorica +3",
-    hands="Boii Mufflers +3",
-    legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Valorous Greaves", augments={'"Mag.Atk.Bns."+9','"Cure" potency +2%','Weapon skill damage +9%','Accuracy+12 Attack+12',}},
-    neck="Fotia Gorget",
-    waist="Fotia Belt",
-    left_ear="Thrud Earring",
-    right_ear="Brutal Earring",
+    body={ name="Sakpata's Plate", augments={'Path: A',}},
+    hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
+    legs="Boii Cuisses +3",
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    neck={ name="War. Beads +2", augments={'Path: A',}},
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+    left_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
+    right_ear="Thrud Earring",
     left_ring="Epaminondas's Ring",
-    right_ring="Karieyh Ring",
+    right_ring="Regal Ring",
     back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},
   }
   
@@ -282,7 +308,7 @@ function get_sets()
     hands="Boii Mufflers +3",
     legs={ name="Valorous Hose", augments={'Accuracy+20 Attack+20','Crit. hit damage +4%','Accuracy+15','Attack+13',}},
     feet={ name="Valorous Greaves", augments={'Accuracy+29','Crit. hit damage +4%','Attack+2',}},
-    neck={ name="War. Beads +1", augments={'Path: A',}},
+    neck={ name="War. Beads +2", augments={'Path: A',}},
     waist="Prosilio Belt +1",
     left_ear="Thrud Earring",
     right_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
@@ -298,7 +324,7 @@ function get_sets()
     hands="Boii Mufflers +3",
     legs={ name="Valorous Hose", augments={'Accuracy+20 Attack+20','Crit. hit damage +4%','Accuracy+15','Attack+13',}},
     feet={ name="Valorous Greaves", augments={'Accuracy+29','Crit. hit damage +4%','Attack+2',}},
-    neck={ name="War. Beads +1", augments={'Path: A',}},
+    neck={ name="War. Beads +2", augments={'Path: A',}},
     waist="Prosilio Belt +1",
     left_ear="Thrud Earring",
     right_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
