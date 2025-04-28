@@ -1,4 +1,4 @@
-TP_mode = 'Normal'
+ TP_mode = 'Normal'
 --Normal, DT, MidAcc, MaxAcc
 
 -- function get_sets()
@@ -27,6 +27,7 @@ function get_sets()
   send_command('bind f12 gs c tp MaxAcc')
 
   sets.Idle = {
+    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
     head="Malignance Chapeau",
     body="Bhikku Cyclas +2",
     hands="Malignance Gloves",
@@ -50,14 +51,15 @@ function get_sets()
     head={ name="Adhemar Bonnet +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
     body="Bhikku Cyclas +2",
     hands={ name="Adhemar Wrist. +1", augments={'Accuracy+20','Attack+20','"Subtle Blow"+8',}},
-    legs="Bhikku Hose +2",
-    feet={ name="Herculean Boots", augments={'Accuracy+30','Quadruple Attack +3','Mag. Acc.+11 "Mag.Atk.Bns."+11',}},
+    legs={ name="Tatena. Haidate +1", augments={'Path: A',}},
+    --legs="Bhikku Hose +2",
+    feet={ name="Tatena. Sune. +1", augments={'Path: A',}},
     neck={ name="Mnk. Nodowa +1", augments={'Path: A',}},
     waist="Moonbow Belt +1",
     left_ear="Sherida Earring",
     right_ear={ name="Bhikku Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+11','Mag. Acc.+11','"Store TP"+3',}},
     left_ring="Niqmaddu Ring",
-    right_ring="Chirich Ring +1",
+    right_ring="Gere Ring",
     back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},
   }
   sets.TP.DT = {
@@ -91,7 +93,22 @@ function get_sets()
     back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},
   }
   sets.TP.MidAcc = {}
-  sets.TP.MaxAcc = {}
+  sets.TP.MaxAcc = {
+    --main={ name="Godhands", augments={'Path: A',}},
+    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+    head="Malignance Chapeau",
+    body="Ken. Samue +1",
+    hands="Anchor. Gloves +3",
+    legs="Mpaca's Hose",
+    feet="Ken. Sune-Ate +1",
+    neck={ name="Mnk. Nodowa +1", augments={'Path: A',}},
+    waist="Moonbow Belt +1",
+    left_ear="Sherida Earring",
+    right_ear="Schere Earring",
+    left_ring="Chirich Ring +1",
+    right_ring="Niqmaddu Ring",
+    back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},
+  }
 
   sets.WS = {}
   sets.WS["Victory Smite"] = {
@@ -216,7 +233,7 @@ end
 function aftercast(spell, act, spellMap, eventArgs)
   if player.status == 'Engaged' then
     if buffactive['Impetus'] then
-      equip (set_combine(sets.TP[TP_mode], {body="Bhikku Cyclas +2",}))
+      equip (set_combine(sets.TP[TP_mode]))
     else 
       equip(sets.TP[TP_mode])
     end
