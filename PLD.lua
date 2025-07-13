@@ -177,7 +177,7 @@ function init_gear_sets()
     hands={ name="Founder's Gauntlets", augments={'STR+10','Attack+15','"Mag.Atk.Bns."+15','Phys. dmg. taken -5%',}},
     legs="Dashing Subligar",
     feet={ name="Odyssean Greaves", augments={'Accuracy+5 Attack+5','"Dbl.Atk."+4','VIT+15',}},
-    neck="Kgt. Beads +2",
+    neck="Kgt. Beads +1",
     waist="Latria Sash",
     left_ear="Terra's Pearl",
     right_ear="Terra's Pearl",
@@ -232,7 +232,7 @@ function init_gear_sets()
     hands={ name="Leyline Gloves", augments={'Accuracy+15','Mag. Acc.+15','"Mag.Atk.Bns."+15','"Fast Cast"+3',}},
     legs={ name="Founder's Hose", augments={'MND+8','Mag. Acc.+14','Attack+13','Breath dmg. taken -3%',}},
     feet={ name="Odyssean Greaves", augments={'"Mag.Atk.Bns."+10','"Fast Cast"+6',}},
-    neck="Kgt. Beads +2",
+    neck="Kgt. Beads +1",
     waist="Gold Mog. Belt",
     right_ear={ name="Chev. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+17','Mag. Acc.+17','Damage taken-6%','STR+9 VIT+9',}},
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
@@ -268,92 +268,76 @@ function init_gear_sets()
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = 
 {
-    ammo="Crepuscular Pebble",
+    ammo="Oshasha's Treatise",
     head={ name="Nyame Helm", augments={'Path: B',}},
     body={ name="Nyame Mail", augments={'Path: B',}},
-    hands={ name="Odyssean Gauntlets", augments={'Attack+27','Weapon skill damage +4%','AGI+7','Accuracy+11',}},
+    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Souveran Schuhs +1", augments={'Accuracy+13','Attack+12','Enmity+5',}},
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck="Fotia Gorget",
-    waist="Prosilio Belt +1",
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear="Thrud Earring",
     right_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
-    left_ring="Karieyh Ring",
+    left_ring="Cornelia's Ring",
     right_ring="Epaminondas's Ring",
-    back={ name="Rudianos's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},
+    back={ name="Rudianos's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+9','Weapon skill damage +10%',}},
 }
  
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
  
     --Stat Modifier:     73~85% MND  fTP:    1.0
- sets.precast.WS['Requiescat'] = 
-{
-    ammo="Crepuscular Pebble",
-    head={ name="Nyame Helm", augments={'Path: B',}},
-    body={ name="Nyame Mail", augments={'Path: B',}},
-    hands={ name="Odyssean Gauntlets", augments={'Attack+27','Weapon skill damage +4%','AGI+7','Accuracy+11',}},
-    legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Souveran Schuhs +1", augments={'Accuracy+13','Attack+12','Enmity+5',}},
-    neck="Fotia Gorget",
-    waist="Prosilio Belt +1",
-    left_ear="Thrud Earring",
-    right_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
-    left_ring="Karieyh Ring",
-    right_ring="Epaminondas's Ring",
-    back={ name="Rudianos's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},
-}
-    
-   --Stat Modifier:  50%MND / 30%STR MAB+    fTP:2.75
+
+   
     sets.precast.WS['Sanguine Blade'] = 
 {
-    ammo="Crepuscular Pebble",
+    ammo="Oshasha's Treatise",
     head={ name="Nyame Helm", augments={'Path: B',}},
     body={ name="Nyame Mail", augments={'Path: B',}},
-    hands={ name="Odyssean Gauntlets", augments={'Attack+27','Weapon skill damage +4%','AGI+7','Accuracy+11',}},
+    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Souveran Schuhs +1", augments={'Accuracy+13','Attack+12','Enmity+5',}},
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck="Fotia Gorget",
-    waist="Prosilio Belt +1",
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear="Thrud Earring",
     right_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
-    left_ring="Karieyh Ring",
+    left_ring="Cornelia's Ring",
     right_ring="Epaminondas's Ring",
-    back={ name="Rudianos's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},
+    back={ name="Rudianos's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+9','Weapon skill damage +10%',}},
 }	
 	
      
     sets.precast.WS['Aeolian Edge'] = 
 {
-    ammo="Crepuscular Pebble",
+    ammo="Oshasha's Treatise",
     head={ name="Nyame Helm", augments={'Path: B',}},
     body={ name="Nyame Mail", augments={'Path: B',}},
-    hands={ name="Odyssean Gauntlets", augments={'Attack+27','Weapon skill damage +4%','AGI+7','Accuracy+11',}},
+    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Souveran Schuhs +1", augments={'Accuracy+13','Attack+12','Enmity+5',}},
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck="Fotia Gorget",
-    waist="Prosilio Belt +1",
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear="Thrud Earring",
     right_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
-    left_ring="Karieyh Ring",
+    left_ring="Cornelia's Ring",
     right_ring="Epaminondas's Ring",
-    back={ name="Rudianos's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},
+    back={ name="Rudianos's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+9','Weapon skill damage +10%',}},
 }
     --Stat Modifier: 50%MND / 50%STR fTP: 1000:4.0 2000:10.25 3000:13.75
     sets.precast.WS['Savage Blade'] = 
 {
-    ammo="Crepuscular Pebble",
+    ammo="Oshasha's Treatise",
     head={ name="Nyame Helm", augments={'Path: B',}},
     body={ name="Nyame Mail", augments={'Path: B',}},
-    hands={ name="Odyssean Gauntlets", augments={'Attack+27','Weapon skill damage +4%','AGI+7','Accuracy+11',}},
+    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Souveran Schuhs +1", augments={'Accuracy+13','Attack+12','Enmity+5',}},
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck="Fotia Gorget",
-    waist="Prosilio Belt +1",
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear="Thrud Earring",
     right_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
-    left_ring="Karieyh Ring",
+    left_ring="Cornelia's Ring",
     right_ring="Epaminondas's Ring",
-    back={ name="Rudianos's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},
+    back={ name="Rudianos's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+9','Weapon skill damage +10%',}},
 }
 
 sets.precast.WS['Hexa Strike'] = 
@@ -376,57 +360,56 @@ sets.precast.WS['Hexa Strike'] =
    --Stat Modifier:  80%DEX  fTP:2.25
    sets.precast.WS['Chant du Cygne'] = 
 {	
-    ammo="Crepuscular Pebble",
+    ammo="Oshasha's Treatise",
     head={ name="Nyame Helm", augments={'Path: B',}},
     body={ name="Nyame Mail", augments={'Path: B',}},
-    hands={ name="Odyssean Gauntlets", augments={'Attack+27','Weapon skill damage +4%','AGI+7','Accuracy+11',}},
+    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Souveran Schuhs +1", augments={'Accuracy+13','Attack+12','Enmity+5',}},
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck="Fotia Gorget",
-    waist="Prosilio Belt +1",
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear="Thrud Earring",
     right_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
-    left_ring="Karieyh Ring",
+    left_ring="Cornelia's Ring",
     right_ring="Epaminondas's Ring",
-    back={ name="Rudianos's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},
+    back={ name="Rudianos's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+9','Weapon skill damage +10%',}},
 }
 	
     --Stat Modifier: WS damage + 62/81   2350DMG maxaggro
     sets.precast.WS['Atonement'] = 
 {
-    ammo="Crepuscular Pebble",
+    ammo="Oshasha's Treatise",
     head={ name="Nyame Helm", augments={'Path: B',}},
     body={ name="Nyame Mail", augments={'Path: B',}},
-    hands={ name="Odyssean Gauntlets", augments={'Attack+27','Weapon skill damage +4%','AGI+7','Accuracy+11',}},
+    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs={ name="Nyame Flanchard", augments={'Path: B',}},
-    feet={ name="Souveran Schuhs +1", augments={'Accuracy+13','Attack+12','Enmity+5',}},
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
     neck="Fotia Gorget",
-    waist="Prosilio Belt +1",
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear="Thrud Earring",
     right_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
-    left_ring="Karieyh Ring",
+    left_ring="Cornelia's Ring",
     right_ring="Epaminondas's Ring",
-    back={ name="Rudianos's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},
+    back={ name="Rudianos's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+9','Weapon skill damage +10%',}},
 }
-
     ------------------------------------------------------------------------------------------------
     -----------------------------------------Midcast sets-------------------------------------------
     ------------------------------------------------------------------------------------------------
     sets.midcast.FastRecast = 
 {
     ammo="Staunch Tathlum +1",
-    head={ name="Jumalik Helm", augments={'MND+10','"Mag.Atk.Bns."+15','Magic burst dmg.+10%','"Refresh"+1',}},
-    body={ name="Souv. Cuirass +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
-    hands="Chev. Gauntlets +2",
-    legs="Founder's Hose",
-    feet="Chev. Sabatons +1",
-    neck="Kgt. Beads +2",
-    waist="Rumination sash",
-    left_ear="Knightly Earring",
-    right_ear={ name="Chev. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+17','Mag. Acc.+17','Damage taken-6%','STR+9 VIT+9',}},
+    head="Chev. Armet +2",
+    body={ name="Sakpata's Plate", augments={'Path: A',}},
+    hands="Regal Gauntlets",
+    legs={ name="Founder's Hose", augments={'MND+1','Mag. Acc.+2','Attack+6',}},
+    feet={ name="Odyssean Greaves", augments={'Attack+23','"Fast Cast"+3','DEX+3','Accuracy+15',}},
+    neck="Moonlight Necklace",
+    waist="Flume Belt +1",
+    left_ear="Etiolation Earring",
+    right_ear="Loquac. Earring",
     left_ring="Moonlight Ring",
     right_ring="Defending Ring",
-    back={ name="Weard Mantle", augments={'VIT+5','DEX+3','Phalanx +5',}},
+    back={ name="Rudianos's Mantle", augments={'HP+45','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Spell interruption rate down-10%',}},
 }
 	
     -- Divine Skill 599/560 140 Acc
@@ -589,7 +572,7 @@ sets.precast.WS['Hexa Strike'] =
     hands="Regal Gauntlets",
 	legs={ name="Founder's Hose", augments={'MND+8','Mag. Acc.+14','Attack+13','Breath dmg. taken -3%',}},
     feet={ name="Eschite Greaves", augments={'HP+80','Enmity+7','Phys. dmg. taken -4',}},
-    neck="Kgt. Beads +2",
+    neck="Kgt. Beads +1",
     waist="Rumination Sash",
     left_ear="Halasz Earring",
     right_ear={ name="Chev. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+17','Mag. Acc.+17','Damage taken-6%','STR+9 VIT+9',}},
@@ -884,7 +867,7 @@ sets.precast.WS['Hexa Strike'] =
     hands="Chev. Gauntlets +2",
     legs="Souv. Diechlings +1",
     feet="Volte Sollerets",
-    neck="Kgt. Beads +2",
+    neck="Kgt. Beads +1",
     waist="Creed Baudrier",
     left_ear="Tuisto Earring",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
@@ -905,9 +888,9 @@ sets.precast.WS['Hexa Strike'] =
     waist="Fucho-no-Obi",
     left_ear="Infused Earring",
     right_ear={ name="Chev. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+17','Mag. Acc.+17','Damage taken-6%','STR+9 VIT+9',}},
-    left_ring="Sheltered Ring",
-    right_ring={name="Stikini Ring +1",bag="wardrobe3"},
-    back={ name="Rudianos's Mantle", augments={'VIT+20','Eva.+20 /Mag. Eva.+20','VIT+10','Enmity+10',}},
+    left_ring="Shneddick Ring",
+    right_ring="Moonlight Ring",
+    back="Moonlight Cape",
 }
      
     -- Idle sets
@@ -920,12 +903,12 @@ sets.precast.WS['Hexa Strike'] =
     legs="Chev. Cuisses +2",
     feet={ name="Sakpata's Leggings", augments={'Path: A',}},
     neck={ name="Kgt. Beads +1", augments={'Path: A',}},
-    waist="Flume Belt +1",
+    waist="Plat. Mog. Belt",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
     right_ear={ name="Chev. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+17','Mag. Acc.+17','Damage taken-6%','STR+9 VIT+9',}},
     left_ring="Moonlight Ring",
-    right_ring="Vengeful Ring",
-    back={ name="Rudianos's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+10','Enmity+10','Damage taken-5%',}},
+    right_ring="Shneddick Ring",
+    back="Moonlight Cape",
 }
  
     sets.idle.Town = 
@@ -937,30 +920,30 @@ sets.precast.WS['Hexa Strike'] =
     legs={ name="Carmine Cuisses +1", augments={'Accuracy+12','DEX+12','MND+20',}},
     feet={ name="Souveran Schuhs +1", augments={'Accuracy+13','Attack+12','Enmity+5',}},
     neck={ name="Kgt. Beads +1", augments={'Path: A',}},
-    waist="Flume Belt +1",
+    waist="Plat. Mog. Belt",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
     right_ear={ name="Chev. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+17','Mag. Acc.+17','Damage taken-6%','STR+9 VIT+9',}},
     left_ring="Dim. Ring (Dem)",
     right_ring="Warp Ring",
-    back={ name="Rudianos's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+10','Enmity+10','Damage taken-5%',}},
+    back="Moonlight Cape",
 }
      
     sets.idle.Weak = 
 {
     --main="burtgang",
-	ammo="Homiliary",
-    head="Twilight helm",
-    neck="Kgt. Beads +2",
-    ear1="Infused Earring",
-    ear2="Ethereal Earring",
-    body="Twilight mail",
-    hands="Regal Gauntlets",
-    ring1="Sheltered Ring",
-    right_ring={name="Stikini Ring +1",bag="wardrobe3"},
+    ammo="Staunch Tathlum +1",
+    head="Twilight Helm",
+    body="Twilight Mail",
+    hands={ name="Souv. Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
+    legs="Chev. Cuisses +2",
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    neck={ name="Kgt. Beads +1", augments={'Path: A',}},
+    waist="Plat. Mog. Belt",
+    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+    right_ear={ name="Chev. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+17','Mag. Acc.+17','Damage taken-6%','STR+9 VIT+9',}},
+    left_ring="Shneddick Ring",
+    right_ring="Moonlight Ring",
     back="Moonlight Cape",
-    waist="Fucho-no-obi",
-    legs={ name="Odyssean Cuisses", augments={'Pet: INT+11','"Mag.Atk.Bns."+18','"Refresh"+2','Mag. Acc.+7 "Mag.Atk.Bns."+7',}},
-    feet="Volte Sollerets",
 }
 
     sets.idle.Weak.Reraise = set_combine(sets.idle.Weak, sets.Reraise)
@@ -1008,7 +991,7 @@ sets.precast.WS['Hexa Strike'] =
     legs="Sulev. Cuisses +2",
     feet="Rev. Leggings +3",
     neck="Moonlight Necklace",
-    waist="Flume Belt +1",
+    waist="Plat. Mog. Belt",
     left_ear="Impreg. Earring",
     right_ear={ name="Chev. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+17','Mag. Acc.+17','Damage taken-6%','STR+9 VIT+9',}},
     left_ring="Moonlight Ring",
@@ -1026,7 +1009,7 @@ sets.precast.WS['Hexa Strike'] =
     legs="Sulev. Cuisses +2",
     feet="Rev. Leggings +3",
     neck="Moonlight Necklace",
-    waist="Flume Belt +1",
+    waist="Plat. Mog. Belt",
     left_ear="Impreg. Earring",
     right_ear={ name="Chev. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+17','Mag. Acc.+17','Damage taken-6%','STR+9 VIT+9',}},
     left_ring="Moonlight Ring",
@@ -1043,7 +1026,7 @@ sets.precast.WS['Hexa Strike'] =
     hands="Chev. Gauntlets +2",
     legs="Souv. Diechlings +1",
     feet="Souveran Schuhs +1",
-    neck="Kgt. Beads +2",
+    neck="Kgt. Beads +1",
     waist="Creed Baudrier",
     left_ear="Tuisto Earring",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
@@ -1061,7 +1044,7 @@ sets.precast.WS['Hexa Strike'] =
     hands="Chev. Gauntlets +2",
     legs="Souv. Diechlings +1",
     feet="Souveran Schuhs +1",
-    neck="Kgt. Beads +2",
+    neck="Kgt. Beads +1",
     waist="Asklepian Belt",
     left_ear="Eabani Earring",
     right_ear="Volunt. Earring",
@@ -1081,7 +1064,7 @@ sets.precast.WS['Hexa Strike'] =
     legs={ name="Souv. Diechlings +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
     feet={ name="Souveran Schuhs +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
     neck="Unmoving Collar +1",
-    waist="Flume Belt +1",
+    waist="Plat. Mog. Belt",
     left_ear="Thureous Earring",
     right_ear={ name="Chev. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+17','Mag. Acc.+17','Damage taken-6%','STR+9 VIT+9',}},
     left_ring="Moonlight Ring",
@@ -1119,7 +1102,7 @@ sets.precast.WS['Hexa Strike'] =
     legs="Souv. Diechlings +1",
     feet="Souv. Cuisses +1",
     neck="Unmoving Collar +1",
-    waist="Flume Belt +1",
+    waist="Plat. Mog. Belt",
     left_ear="Thureous Earring",
     right_ear={ name="Chev. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+17','Mag. Acc.+17','Damage taken-6%','STR+9 VIT+9',}},
     left_ring="Moonlight Ring",
@@ -1149,19 +1132,32 @@ sets.precast.WS['Hexa Strike'] =
 
     sets.engaged = --1124 / 1264 avec enlight up
 {
-    ammo="Staunch Tathlum +1",
-    head="Chev. Armet +2",
-    body="Sakpata's Plate",
-    hands="Chev. Gauntlets +2",
-    legs="Chev. Cuisses +2",
+    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+    head={ name="Sakpata's Helm", augments={'Path: A',}},
+    body={ name="Sakpata's Plate", augments={'Path: A',}},
+    hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
+    legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
     feet={ name="Sakpata's Leggings", augments={'Path: A',}},
-    neck={ name="Kgt. Beads +1", augments={'Path: A',}},
-    waist="Flume Belt +1",
-    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+    neck="Null Loop",
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+    left_ear="Telos Earring",
     right_ear={ name="Chev. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+17','Mag. Acc.+17','Damage taken-6%','STR+9 VIT+9',}},
-    left_ring="Moonlight Ring",
-    right_ring="Petrov Ring",
+    left_ring="Chirich Ring +1",
+    right_ring="Regal Ring",
     back={ name="Rudianos's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+10','Enmity+10','Damage taken-5%',}},
+    --ammo="Staunch Tathlum +1",
+    --head="Chev. Armet +2",
+    --body="Sakpata's Plate",
+    --hands="Chev. Gauntlets +2",
+    --legs="Chev. Cuisses +2",
+    --feet={ name="Sakpata's Leggings", augments={'Path: A',}},
+    --neck={ name="Kgt. Beads +1", augments={'Path: A',}},
+    --waist="Plat. Mog. Belt",
+    --left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+    --right_ear={ name="Chev. Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+17','Mag. Acc.+17','Damage taken-6%','STR+9 VIT+9',}},
+    --left_ring="Moonlight Ring",
+    --right_ring="Petrov Ring",
+    --back={ name="Rudianos's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+10','Enmity+10','Damage taken-5%',}},
 }
  
     sets.engaged.Acc = --1199 / 1341 avec enlight up
