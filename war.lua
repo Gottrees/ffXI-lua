@@ -112,13 +112,13 @@ function get_sets()
     body="Boii Lorica +3",
     hands="Boii Mufflers +3",
     legs="Boii Cuisses +3",
-    feet="Hermes' Sandals",
+    feet="Boii Calligae +3",
     neck={ name="War. Beads +2", augments={'Path: A',}},
-    waist="Ioskeha Belt +1",
+    waist="Plat. Mog. Belt",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
     right_ear={ name="Boii Earring", augments={'System: 1 ID: 1676 Val: 0','Accuracy+6','Mag. Acc.+6',}},
     left_ring="Defending Ring",
-    right_ring="Moonlight Ring",
+    right_ring="Shneddick Ring",
     back="Moonlight Cape",
   }
   
@@ -198,7 +198,7 @@ function get_sets()
     left_ear="Thrud Earring",
     right_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
     left_ring="Epaminondas's Ring",
-    right_ring="Karieyh Ring",
+    right_ring="Cornelia's Ring",
     back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},
   }
 
@@ -214,7 +214,7 @@ function get_sets()
     waist="Fotia Belt",
     left_ear="Ishvara Earring",
     right_ear="Brutal Earring",
-    left_ring="Karieyh Ring",
+    left_ring="Cornelia's Ring",
     right_ring="Flamma Ring",
     back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},
   }
@@ -230,7 +230,7 @@ function get_sets()
     waist="Fotia Belt",
     left_ear="Ishvara Earring",
     right_ear="Brutal Earring",
-    left_ring="Karieyh Ring",
+    left_ring="Cornelia's Ring",
     right_ring="Flamma Ring",
     back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},
   }
@@ -246,7 +246,7 @@ function get_sets()
     waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     left_ear="Ishvara Earring",
     right_ear="Odnowa Earring",
-    left_ring="Karieyh Ring",
+    left_ring="Cornelia's Ring",
     right_ring="Dim. Ring (Holla)",
     back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},
   }
@@ -263,7 +263,7 @@ function get_sets()
   --   waist="Ioskeha Belt",
   --   left_ear="Cessance Earring",
   --   right_ear="Brutal Earring",
-  --   left_ring="Karieyh Ring",
+  --   left_ring="Cornelia's Ring",
   --   right_ring="Flamma Ring",
   --   back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},
   -- }
@@ -312,7 +312,7 @@ function get_sets()
     waist="Prosilio Belt +1",
     left_ear="Thrud Earring",
     right_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
-    left_ring="Karieyh Ring",
+    left_ring="Cornelia's Ring",
     right_ring="Begrudging Ring",
     back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Accuracy+10','Crit.hit rate+10',}},
   }
@@ -328,7 +328,7 @@ function get_sets()
     waist="Prosilio Belt +1",
     left_ear="Thrud Earring",
     right_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
-    left_ring="Karieyh Ring",
+    left_ring="Cornelia's Ring",
     right_ring="Begrudging Ring",
     back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Accuracy+10','Crit.hit rate+10',}},
   }
