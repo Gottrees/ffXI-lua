@@ -288,21 +288,39 @@ function init_gear_sets()
 
   -- 110 total Enhancing Magic Skill; caps even without Light Arts
   sets.midcast['Enhancing Magic'] = {
-    main={ name="Gada", augments={'Enh. Mag. eff. dur. +5','MND+1','Mag. Acc.+1',}},
-    sub="Ammurapi Shield",
+    main={ name="Gada", augments={'Enh. Mag. eff. dur. +5','VIT+4','Mag. Acc.+17','"Mag.Atk.Bns."+11','DMG:+11',}},
+    sub="Sors Shield",
+    ammo="Impatiens",
+    head={ name="Telchine Cap", augments={'Enh. Mag. eff. dur. +10',}},
+    body={ name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +9',}},
+    hands={ name="Telchine Gloves", augments={'Enh. Mag. eff. dur. +10',}},
+    legs={ name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +10',}},
+    feet={ name="Telchine Pigaches", augments={'Enh. Mag. eff. dur. +9',}},
+    neck={ name="Clr. Torque +1", augments={'Path: A',}},
     waist="Embla Sash",
-    head={ name="Telchine Cap", augments={'Enh. Mag. eff. dur. +7',}},
-    body={ name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +8',}},
-    hands={ name="Telchine Gloves", augments={'Enh. Mag. eff. dur. +7',}},
-  }
+    left_ear="Magnetic Earring",
+    right_ear="Regal Earring",
+    left_ring="Sheltered Ring",
+    right_ring="Stikini Ring +1",
+    back={ name="Alaunus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+5','"Fast Cast"+10','Spell interruption rate down-6%',}},
+}
   sets.midcast.EnhancingDuration = {
-    main={ name="Gada", augments={'Enh. Mag. eff. dur. +5','MND+1','Mag. Acc.+1',}},
-    sub="Ammurapi Shield",
+    main={ name="Gada", augments={'Enh. Mag. eff. dur. +5','VIT+4','Mag. Acc.+17','"Mag.Atk.Bns."+11','DMG:+11',}},
+    sub="Sors Shield",
+    ammo="Impatiens",
+    head={ name="Telchine Cap", augments={'Enh. Mag. eff. dur. +10',}},
+    body={ name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +9',}},
+    hands={ name="Telchine Gloves", augments={'Enh. Mag. eff. dur. +10',}},
+    legs={ name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +10',}},
+    feet={ name="Telchine Pigaches", augments={'Enh. Mag. eff. dur. +9',}},
+    neck={ name="Clr. Torque +1", augments={'Path: A',}},
     waist="Embla Sash",
-    head={ name="Telchine Cap", augments={'Enh. Mag. eff. dur. +7',}},
-    body={ name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +8',}},
-    hands={ name="Telchine Gloves", augments={'Enh. Mag. eff. dur. +7',}},
-  }
+    left_ear="Magnetic Earring",
+    right_ear="Regal Earring",
+    right_ring="Stikini Ring +1",
+    back={ name="Alaunus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+5','"Fast Cast"+10','Spell interruption rate down-6%',}},
+}
+
   sets.midcast.Regen = set_combine(sets.midcast.EnhancingDuration, {})
 
   sets.midcast.RegenDuration = set_combine(sets.midcast.EnhancingDuration, {})
@@ -346,13 +364,13 @@ function init_gear_sets()
     body="Inyanga Jubbah +2",
     hands={ name="Chironic Gloves", augments={'Accuracy+8','"Refresh"+2','Accuracy+3 Attack+3','Mag. Acc.+19 "Mag.Atk.Bns."+19',}},
     legs="Inyanga Shalwar +2",
-    feet="Inyan. Crackows +2",
+    feet="Herald's Gaiters",
     neck={ name="Loricate Torque +1", augments={'Path: A',}},
-    waist="Witful Belt",
+    waist="Plat. Mog. Belt",
     left_ear={ name="Moonshade Earring", augments={'Mag. Acc.+4','Latent effect: "Refresh"+1',}},
     right_ear="Nourish. Earring +1",
     left_ring="Stikini Ring +1",
-    right_ring="Stikini Ring +1",
+    right_ring="Gurebu's Ring",
     back={ name="Alaunus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Cure" potency +10%','Spell interruption rate down-10%',}},
   }
 
@@ -366,11 +384,11 @@ function init_gear_sets()
     legs="Ebers Pant. +3",
     feet="Nyame Sollerets",
     neck={ name="Loricate Torque +1", augments={'Path: A',}},
-    waist="Witful Belt",
+    waist="Plat. Mog. Belt",
     left_ear={ name="Moonshade Earring", augments={'Mag. Acc.+4','Latent effect: "Refresh"+1',}},
     right_ear="Nourish. Earring +1",
     left_ring="Stikini Ring +1",
-    right_ring="Stikini Ring +1",
+    right_ring="Gurebu's Ring",
     back={ name="Alaunus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Cure" potency +10%','Spell interruption rate down-10%',}},
   })
  
@@ -384,11 +402,11 @@ function init_gear_sets()
     legs="Ebers Pant. +3",
     feet="Inyan. Crackows +2",
     neck={ name="Loricate Torque +1", augments={'Path: A',}},
-    waist={ name="Acuity Belt +1", augments={'Path: A',}},
+    waist="Plat. Mog. Belt",
     left_ear={ name="Moonshade Earring", augments={'Mag. Acc.+4','Latent effect: "Refresh"+1',}},
     right_ear="Domin. Earring +1",
     left_ring="Stikini Ring +1",
-    right_ring="Stikini Ring +1",
+    right_ring="Gurebu's Ring",
     back={ name="Alaunus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Cure" potency +10%','Spell interruption rate down-10%',}},
   })
   sets.idle.Town = set_combine(sets.idle, {})
@@ -407,11 +425,11 @@ function init_gear_sets()
     legs="Ebers Pant. +3",
     feet="Herald's Gaiters",
     neck={ name="Loricate Torque +1", augments={'Path: A',}},
-    waist="Witful Belt",
+    waist="Plat. Mog. Belt",
     left_ear={ name="Moonshade Earring", augments={'Mag. Acc.+4','Latent effect: "Refresh"+1',}},
     right_ear="Nourish. Earring +1",
     left_ring="Stikini Ring +1",
-    right_ring="Stikini Ring +1",
+    right_ring="Gurebu's Ring",
     back={ name="Alaunus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Cure" potency +10%','Spell interruption rate down-10%',}},
   }
   sets.latent_refresh = {}
