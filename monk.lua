@@ -32,13 +32,13 @@ function get_sets()
     body="Bhikku Cyclas +2",
     hands="Malignance Gloves",
     legs="Bhikku Hose +2",
-    feet="Hermes' Sandals",
+    feet={ name="Tatena. Sune. +1", augments={'Path: A',}},
     neck={ name="Mnk. Nodowa +1", augments={'Path: A',}},
     waist="Moonbow Belt +1",
     left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
     right_ear={ name="Bhikku Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+11','Mag. Acc.+11','"Store TP"+3',}},
     left_ring="Defending Ring",
-    right_ring="Chirich Ring +1",
+    right_ring="Shneddick Ring",
     back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},
   }
   sets.JA = {}
@@ -139,7 +139,7 @@ function get_sets()
     left_ear="Sherida Earring",
     right_ear="Odr Earring",
     left_ring="Epaminondas's Ring",
-    right_ring="Karieyh Ring",
+    right_ring="Cornelia's Ring",
     back={ name="Segomo's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
   }
   sets.WS["Raging Fists"] = {
