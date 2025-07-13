@@ -151,15 +151,15 @@ function init_gear_sets()
         ammo="Knobkierrie",
         head={ name="Nyame Helm", augments={'Path: B',}},
         body={ name="Nyame Mail", augments={'Path: B',}},
-        hands="Kasuga Kote +2",
+        hands={ name="Nyame Gauntlets", augments={'Path: B',}},
         legs={ name="Nyame Flanchard", augments={'Path: B',}},
-        feet={ name="Valorous Greaves", augments={'"Mag.Atk.Bns."+9','"Cure" potency +2%','Weapon skill damage +9%','Accuracy+12 Attack+12',}},
-        neck={ name="Sam. Nodowa +1", augments={'Path: A',}},
-        waist="Fotia Belt",
+        feet={ name="Nyame Sollerets", augments={'Path: B',}},
+        neck={ name="Sam. Nodowa +2", augments={'Path: A',}},
+        waist={ name="Sailfi Belt +1", augments={'Path: A',}},
         left_ear="Thrud Earring",
         right_ear={ name="Kasuga Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+12','Mag. Acc.+12','Weapon skill damage +2%',}},
         left_ring="Epaminondas's Ring",
-        right_ring="Karieyh Ring",
+        right_ring="Cornelia's Ring",
         back={ name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
 	}
 	
@@ -224,12 +224,12 @@ function init_gear_sets()
         hands={ name="Nyame Gauntlets", augments={'Path: B',}},
         legs={ name="Nyame Flanchard", augments={'Path: B',}},
         feet={ name="Nyame Sollerets", augments={'Path: B',}},
-        neck={ name="Sam. Nodowa +1", augments={'Path: A',}},
-        waist="Brezze Belt",
+        neck={ name="Sam. Nodowa +2", augments={'Path: A',}},
+        waist="Orpheus's Sash",
         left_ear="Friomisi Earring",
         right_ear={ name="Kasuga Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+12','Mag. Acc.+12','Weapon skill damage +2%',}},
         left_ring="Epaminondas's Ring",
-        right_ring="Karieyh Ring",
+        right_ring="Cornelia's Ring",
         back={ name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
     }
         
@@ -248,12 +248,12 @@ function init_gear_sets()
         body="Kasuga Domaru +2",
         hands="Nyame Gauntlets",
         legs="Kasuga Haidate +2",
-        feet="Danzo Sune-Ate",
-        neck={ name="Sam. Nodowa +1", augments={'Path: A',}},
+        feet={ name="Tatena. Sune. +1", augments={'Path: A',}},
+        neck={ name="Sam. Nodowa +2", augments={'Path: A',}},
         waist="Ioskeha Belt +1",
         left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
         right_ear={ name="Kasuga Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+12','Mag. Acc.+12','Weapon skill damage +2%',}},
-        left_ring="Chirich Ring +1",
+        left_ring="Shneddick Ring",
         right_ring="Defending Ring",
         back={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}}, 
   }
@@ -264,13 +264,13 @@ function init_gear_sets()
         body="Wakido Domaru +2",
         hands="Wakido Kote +2",
         legs="Wakido Haidate +3",
-        feet="Danzo Sune-Ate",
-        neck={ name="Sam. Nodowa +1", augments={'Path: A',}},
+        feet={ name="Tatena. Sune. +1", augments={'Path: A',}},
+        neck={ name="Sam. Nodowa +2", augments={'Path: A',}},
         waist="Ioskeha Belt +1",
         left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
         right_ear={ name="Kasuga Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+12','Mag. Acc.+12','Weapon skill damage +2%',}},
         left_ring="Warp Ring",
-        right_ring="Dim. Ring (Dem)",
+        right_ring="Shneddick Ring",
         back={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},
     }
     -- sets.idle.Town.Adoulin = set_combine(sets.idle.Town, {
@@ -311,7 +311,7 @@ function init_gear_sets()
 		body="Kendatsuba Samue",
     })
     
-    sets.Kiting = {feet="Danzo Sune-ate"}
+    sets.Kiting = {right_ring="Shneddick Ring",}
     
     sets.Reraise = {}
     
@@ -332,7 +332,7 @@ function init_gear_sets()
         legs={ name="Tatena. Haidate +1", augments={'Path: A',}},
         --legs="Kasuga Haidate +2",
         feet={ name="Tatena. Sune. +1", augments={'Path: A',}},
-        neck={ name="Sam. Nodowa +1", augments={'Path: A',}},
+        neck={ name="Sam. Nodowa +2", augments={'Path: A',}},
         waist={ name="Sailfi Belt +1", augments={'Path: A',}},
         left_ear="Cessance Earring",
         right_ear={ name="Kasuga Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+12','Mag. Acc.+12','Weapon skill damage +2%',}},
@@ -350,7 +350,7 @@ function init_gear_sets()
         hands="Wakido Kote +2",
         legs="Wakido Haidate +3",
         feet="Wakido Sune. +2",
-        neck={ name="Sam. Nodowa +1", augments={'Path: A',}},
+        neck={ name="Sam. Nodowa +2", augments={'Path: A',}},
         waist="Ioskeha Belt +1",
         left_ear="Crep. Earring",
         right_ear={ name="Kasuga Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+12','Mag. Acc.+12','Weapon skill damage +2%',}},
